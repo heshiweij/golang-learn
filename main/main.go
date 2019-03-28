@@ -1,12 +1,62 @@
 package main
 
+import "go_learner/day04"
+
+//import "go_learner/day03"
+
 func main() {
 
-	day03()
+	funcDay03()
+
+	funcDay04()
 
 }
 
-func day03() {
+func funcDay04() {
+	// 匿名字段初始化
+	//day04.InitializeAnony()
+
+	// 成员的操作
+	//day04.OperateAnony()
+
+	// 非结构体匿名字段
+	//day04.NoneStructAnonyField()
+
+	// 结构体指针类型匿名字段
+	//day04.StructAnonyPointerField()
+
+	// 结构体方法 给基本类型绑定方法
+	//day04.StructBasicTypeBindFunc()
+
+	// 结构体方法 给结构体添加绑定方法
+	//day04.StructBindFunc();
+
+	// 方法的继承
+	//day04.StructFuncInhert()
+
+	// 方法的重写
+	//day04.StructFuncRewrite()
+
+	// 方法值和方法表达式
+	//day04.StructFuncValueAndExpress()
+
+	// 接口的定义和实现
+	//day04.InterfaceDefine()
+
+	// 多态的表现
+	//day04.PolyDefine()
+
+	// 接口的继承和转换
+	//day04.InterfaceInheritAndTransfer()
+
+	// 空接口
+	//day04.InterfaceEmpty()
+
+	// 类型断言
+	day04.InterfaceTypeAssert()
+}
+
+func funcDay03() {
 	// 随机数的使用
 	//day03.RandNumber()
 
