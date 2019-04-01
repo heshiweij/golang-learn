@@ -1,7 +1,6 @@
 package main
 
 import (
-	"go_learner/day05"
 	"go_learner/day07"
 	"go_learner/libraries"
 )
@@ -12,17 +11,21 @@ func main() {
 	//
 	//funcDay04()
 	//
-	funcDay05()
+	//funcDay05()
 	//
 	//funcDay06()
 	//
 	//funcDay07()
 
-	//funcLibraries()
+	funcLibraries()
 }
 
 func funcLibraries() {
-	libraries.TestRedis()
+	//libraries.TestRedis()
+
+	//libraries.TestHttp()
+
+	libraries.TestMySQL()
 }
 
 func funcDay07() {
@@ -91,7 +94,7 @@ func funcDay05() {
 	//day05.FileUsing()
 
 	// 标准输入输出
-	day05.StdinStdoutUsing()
+	//day05.StdinStdoutUsing()
 }
 
 func funcDay04() {
