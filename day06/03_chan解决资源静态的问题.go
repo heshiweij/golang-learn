@@ -2,43 +2,23 @@ package day06
 
 import (
 	"fmt"
-	"time"
 )
 
-var a = 1
+var ch = make(chan int)
 
 // 协程资源竞争问题
-func RoutineResCompete() {
+func RoutineChannel() {
 	// 同时开启两个协程，处理同一个资源，会产生资源竞争问题
-	//runtime.GOMAXPROCS(4)
-	//go person01()
-	//go person02()
-	//
-	//for {
-	//	;
-	//}
-
-	// 02 协程可以直接访问和修改全局变量的数据，而不是拷贝
-
-	go func() {
-		time.Sleep(time.Second * 2)
-		a = 2
-	}()
-
-	go test2()
+	go person03()
+	go person04()
 
 	for {
-		fmt.Println("a = ", a)
-		time.Sleep(time.Second)
+		;
 	}
 
 }
 
-func test2() {
-	a = 3
-}
-
-func Printer(content string) {
+func Printer01(content string) {
 	for _, data := range content {
 		fmt.Printf("%c", data)
 	}
@@ -46,10 +26,15 @@ func Printer(content string) {
 	fmt.Println()
 }
 
-func person01() {
-	Printer("hello")
+func person03() {
+	Printer01("hello")
+	// 当执行完毕后，向管道推入 666
+	ch <- 666
 }
 
-func person02() {
-	Printer("world")
+func person04() {
+	// 无数据时，阻塞，有数据时，取出并继续执行
+	a := <-ch
+	Printer01("world")
+	fmt.Println(a)
 }

@@ -1,15 +1,97 @@
 package main
 
-import "go_learner/day04"
-
-//import "go_learner/day03"
+import (
+	"go_learner/day05"
+	"go_learner/day07"
+	"go_learner/libraries"
+)
 
 func main() {
 
-	funcDay03()
+	//funcDay03()
+	//
+	//funcDay04()
+	//
+	funcDay05()
+	//
+	//funcDay06()
+	//
+	//funcDay07()
 
-	funcDay04()
+	//funcLibraries()
+}
 
+func funcLibraries() {
+	libraries.TestRedis()
+}
+
+func funcDay07() {
+	// Socket的实现
+	day07.Socket()
+}
+
+func funcDay06() {
+	// 协程的使用
+	//day06.RoutineUsing()
+
+	// 协程资源竞争问题
+	//day06.RoutineResCompete()
+
+	// 协程资源竞争问题
+	//day06.RoutineChannel()
+
+	// Chan 实现数据的交互
+	//day06.ChanDataShare()
+
+	// 有无缓存Chan的区别
+	//day06.RoutineChenCache()
+
+	//关闭chan
+	//day06.CloseChan()
+
+	// 单向管道
+	//day06.UniDirectChan()
+
+	// Timer的使用
+	//day06.UsingTimer()
+
+	// Timer的停止和重置
+	//day06.TimerStoppingReset()
+
+	// Ticker 的使用
+	//day06.UsingTicker()
+
+	// select实现斐波那契
+	//day06.UsingSelectFibonacci()
+
+	// select实现超时机制
+	//day06.SelectTimeout()
+}
+
+func funcDay05() {
+	// error接口的使用
+	//day05.ErrorUsing()
+
+	// 字符串函数的使用
+	//day05.StringFuncUsing()
+
+	// 字符串转换
+	//day05.StringConvert()
+
+	// 正则表达式
+	//day05.RegexUsing()
+
+	// JSON 使用
+	//day05.JSONUsing()
+
+	// 设备文件的操作
+	//day05.DeviceFileUsing()
+
+	// 文件的操作
+	//day05.FileUsing()
+
+	// 标准输入输出
+	day05.StdinStdoutUsing()
 }
 
 func funcDay04() {
@@ -53,7 +135,7 @@ func funcDay04() {
 	//day04.InterfaceEmpty()
 
 	// 类型断言
-	day04.InterfaceTypeAssert()
+	//day04.InterfaceTypeAssert()
 }
 
 func funcDay03() {

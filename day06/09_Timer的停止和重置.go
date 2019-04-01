@@ -7,10 +7,30 @@ import (
 
 // Timer 的停止和重置
 func TimerStoppingReset() {
-	stopTimer()
+	// 停止
+	//stopTimer()
+
+	// 重置
+	resetTimer()
 
 }
 
+// 重置
+func resetTimer() {
+	timer := time.NewTimer(10 * time.Second)
+
+	ok := timer.Reset(time.Second)
+
+	if ok {
+		fmt.Println("重置成功")
+	}
+
+	<-timer.C
+
+	fmt.Println("结束")
+}
+
+// 停止
 func stopTimer() {
 	timer := time.NewTimer(2 * time.Second)
 
