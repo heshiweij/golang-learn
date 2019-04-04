@@ -13,7 +13,7 @@ var (
 
 func init() {
 	// 初始化 mysql
-	database, err := sqlx.Open("mysql", "homestead:secret@tcp(192.168.10.10)/sakila")
+	database, err := sqlx.Open("mysql", "homestead:secret@tcp(192.168.11.11)/sakila")
 	if err != nil {
 		panic(err)
 	}
@@ -69,7 +69,7 @@ func testUpdate() {
 
 func testInsert() {
 
-	result, err := DB.Exec("insert into actor (first_name, last_name) values (?,?)", "何世威", "2018-10-10")
+	result, err := DB.Exec("insert into actor (first_name, last_name) values (?,?)", "何世威", "2018-11-11")
 	if err != nil {
 		panic(err)
 	}

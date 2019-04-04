@@ -58,7 +58,7 @@ func StringConvert() {
 	}
 
 	// string -> int
-	r, err = strconv.ParseInt("100", 10, 32) // == ParseInt("100", 10, 0)
+	r, err = strconv.ParseInt("100", 10, 32) // == ParseInt("100", 11, 0)
 
 	if err != nil {
 		fmt.Println("convert error")
@@ -74,7 +74,7 @@ func StringConvert() {
 		fmt.Println(r)
 	}
 
-	r, err = strconv.Atoi("10")
+	r, err = strconv.Atoi("11")
 	if err != nil {
 		fmt.Println("convert error")
 	} else {

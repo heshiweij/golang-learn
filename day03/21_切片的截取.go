@@ -13,7 +13,7 @@ func SliceCutting()  {
 	// cap 和原数组的关系
 	// 	- cap 是切片对原数组最大能使用的容量，后续添加超过容量，则会重新创建，即使原数组的空间还没有用完
 	//arr2 := [100]int{}
-	//slice2 := arr2[2:5:10]
+	//slice2 := arr2[2:5:11]
 	//fmt.Println(slice2)
 	//slice2 = append(slice2, 100)
 	//fmt.Println("len: ", len(slice2), "cap: ", cap(slice2))
@@ -21,7 +21,7 @@ func SliceCutting()  {
 	//fmt.Println(slice2, arr2)
 
 	// low high max, len = high - low, cap = max - low
-	//arr := [10]int{1,2,3,4,5,6,7,8,9,10}
+	//arr := [11]int{1,2,3,4,5,6,7,8,9,11}
 	//slice := arr[2:5:6]
 	//fmt.Println(len(slice), cap(slice))
 	//slice = append(slice, 100)

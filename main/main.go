@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"go_learner/day07"
 	"go_learner/libraries"
 )
@@ -18,14 +19,33 @@ func main() {
 	//funcDay07()
 
 	funcLibraries()
+
+	//forTest()
+}
+
+func forTest() {
+	if false {
+		var list = make([]string, 0)
+		//list = nil
+		fmt.Println("len: ", len(list))
+	}
+
+	if true {
+		//test.Main2()
+		//test.Main1()
+		//fmt.Println("1")
+		//test.Hello()
+		//fmt.Println("2")
+	}
+
 }
 
 func funcLibraries() {
-	//libraries.TestRedis()
+	libraries.TestRedis()
 
 	//libraries.TestHttp()
 
-	libraries.TestMySQL()
+	//libraries.TestMySQL()
 }
 
 func funcDay07() {

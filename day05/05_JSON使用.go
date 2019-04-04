@@ -34,7 +34,7 @@ func JSONUsing() {
 	JSONToMap()
 
 	//var data interface{}
-	//data = "10"
+	//data = "11"
 	//GetOriginValue(data)
 }
 
@@ -50,7 +50,7 @@ func jsonToStruct() {
 	str := `
 {
 	"name": "hsw",
-	"age": 10,
+	"age": 11,
 	"gender": true,
 	"hobby": ["1", "2", "3"]
 }
@@ -70,7 +70,7 @@ func JSONToMap() {
 	var str = `
 {
 	"name": "hsw",
-	"age": 10,
+	"age": 11,
 	"hobby": ["1", "2", "3"]
 }
 `
